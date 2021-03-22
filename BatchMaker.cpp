@@ -87,7 +87,7 @@ int main() {
 		cout << "\nBatchMaker e' un software ideato per la realizzazione di malware in Batch.\nIl progetto e' stato inizialmente sviluppato dal team di Sicurezza Informatica" << endl;
         cout << "Sapphire Security, che ha passato la cura del progetto alla comunità \"EnJava\". Il programma permette" << endl;
         cout << "la creazione di malware altamente pericolosi scritti in Batch.\nTra gli sviluppatori principali";
-        cout << " ricordiamo ThaMessia, moonl1ght01 e Bl4ckdestinyXX." << endl;
+        cout << " ricordiamo ThaMessia e moonl1ght01." << endl;
 	}else if (scelta == "silentmalware" || scelta == "Silentmalware"){ // se invece il comando è "silentmalware" allora esegue quanto segue
 		try {
 			ofstream silentmalware("silentmalware.bat"); // crea il file
