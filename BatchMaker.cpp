@@ -85,6 +85,14 @@ int main() {
 			cout << "]";
 			setcolor(4);
 			cout << endl;
+			setcolor(7);
+			cout << "[";
+			setcolor(4);
+			cout << "SilentMalware";
+			setcolor(7);
+			cout << "]";
+			setcolor(4);
+			cout << endl;
 		}else if (scelta == "simplemalware" || scelta == "Simplemalware"){ // se invecec il comando è "simplemalware", allora esegue quanto segue
 			try {
 			ofstream simplemalware("simplemalware.bat"); // crea il file
@@ -205,4 +213,5 @@ int main() {
 	}
 	return 0; // ritorna a 0 (Signfica che il software è stato eseguito con successo)
 }
+
 
