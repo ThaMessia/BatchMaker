@@ -132,10 +132,16 @@ int main() {
 			cerr << errori.errore; // nel caso non riesca ad esegure le azioni scritte sopra, invierà questo errore
 		}
 	}else if (scelta == "info" || scelta == "Info"){ // se invece il comando è "help" allora esegue quanto segue
-		cout << "\nBatchMaker e' un software ideato per la realizzazione di malware in Batch.\nIl progetto e' stato inizialmente sviluppato dal team di Sicurezza Informatica" << endl;
+		setcolor(7);
+		cout << "---" << endl;
+		setcolor(4);
+		cout << "BatchMaker e' un software ideato per la realizzazione di malware in Batch.\nIl progetto e' stato inizialmente sviluppato dal team di Sicurezza Informatica" << endl;
         cout << "Sapphire Security, che ha passato la cura del progetto alla comunità \"EnJava\". Il programma permette" << endl;
         cout << "la creazione di malware altamente pericolosi scritti in Batch.\nTra gli sviluppatori principali";
         cout << " ricordiamo ThaMessia, moonl1ght01 e Bl4ckdestinyXX." << endl;
+        setcolor(7);
+        cout << "---" << endl;
+        setcolor(4);
 	}else if (scelta == "silentmalware" || scelta == "Silentmalware"){ // se invece il comando è "silentmalware" allora esegue quanto segue
 		try {
 			ofstream silentmalware("silentmalware.bat"); // crea il file
@@ -188,7 +194,9 @@ int main() {
         }
         
         
-    }else{
+    }else if (scelta == "clear" || scelta == "Clear"){
+    	system("cls");
+	}else{
         cout << "\nComando non trovato. Digita 'list' per una lista di comandi.\n";
     }
 
