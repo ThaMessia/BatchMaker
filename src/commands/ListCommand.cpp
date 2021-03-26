@@ -11,5 +11,4 @@ void executeListCmd() {
 	writeTextSquared("BlockConnection", 0x7, 0x4);
 	writeTextSquared("PcDestroy", 0x7, 0x4);
 	writeTextSquared("SilentMalware", 0x7, 0x4);
-	setcolor(0x4);
 }
