@@ -1,1 +1,5 @@
 /.vs/
+/.vscode/
+BatchMaker.exe
+ConsoleUtils.h.gch
+ListCommand.h.gch
