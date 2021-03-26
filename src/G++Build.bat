@@ -1,0 +1,1 @@
+g++ BatchMaker.cpp ConsoleUtils.cpp ConsoleUtils.h commands/ListCommand.cpp commands/ListCommand.h -o BatchMaker
