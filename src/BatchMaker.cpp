@@ -24,7 +24,7 @@ int main() {
 
 	setcolor(0x4);
 	cout << "Benvenuto in Batch Maker! by Sapphire Security" << endl;
-	cout << "Hai a disposizione un certo numero di exploit, che puoi creare scrivendo sul programma il nome dell'exploit che vuoi creare.\n\n" ;
+	cout << "Hai a disposizione un certo numero di exploit, che puoi creare scrivendo sul programma il \nnome dell'exploit che vuoi creare.\n\n" ;
 	cout << "Per visualizzare la lista degli exploit digita \"list\"\n" << "Per ottenere informazioni sul " << 
 			"prodotto digita \"info\"" << endl;
 
