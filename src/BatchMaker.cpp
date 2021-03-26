@@ -2,15 +2,13 @@
 #include <string>
 #include <fstream>
 #include <windows.h>
+#include <algorithm>
+#include <cctype>
 
 #include "./ConsoleUtils.h"
 #include "commands/ListCommand.h"
 
 using namespace std;
-
-void executeListCmd();
-void setcolor(unsigned short color);
-void writeTextSquared(string s, unsigned short squarec, unsigned short txtc);
 
 int main() {
 	typedef struct {
@@ -21,23 +19,26 @@ int main() {
 
 	// invia i primi messaggi allo start del software
 	setcolor(0x4);
-	cout << "Benvenuto in Batch Maker! by Sapphire Security" << endl; 
-	cout << "Hai a disposizione un certo numero di exploit, che puoi creare scrivendo sul programma\nil nome dell'exploit che vuoi creare." << endl << endl;
-	cout << "Per visualizzare la lista degli exploit digita 'list'" << endl;
-	cout << "Per ottenere informazioni sul prodotto digita 'info'" << endl;
+	cout << "Benvenuto in Batch Maker! by Sapphire Security" << endl << "Hai a disposizione un certo numero di exploit, che puoi creare scrivendo sul " << 
+		"programma\n" << "il nome dell'exploit che vuoi creare." << endl << endl << "Per visualizzare la lista degli exploit digita 'list'" << 
+		endl << "Per ottenere informazioni sul prodotto digita 'info'" << endl;
 
 	while (true) {
 		cout << "\nScelta: ";
 		setcolor(0x9);
 		getline(cin, select);
 		setcolor(0x4);
+		transform(select.begin(), select.end(), select.begin(), [] (unsigned char c) { return tolower(c); });
 
 		if (select == "list") {
 			executeListCmd();
 			continue;
 		}
 
-
+		if (select == "simplemalware") {
+			
+			continue;
+		}
 	}
 
 	return 0x0;
