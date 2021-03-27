@@ -1,17 +1,8 @@
 # BatchMaker
-
-<br>
-
 Welcome to BatchMaker! This project is a C++ framework that allows you to create Batch malwares. This software was created by @ThaMessia and @LoryTheRock24 with the intention of testing projects of IT. If the software is used in a wrong use (Illegal, malign etc.), @ThaMessia and @LoryTheRock24 won't assume any responsabilities by any consequences at the victim.
 
-<br>
-
 # Code and Info:
-
-<br>
-
-## Code elements:
-
+### Code elements:
 All the files of the code
 
 * src
@@ -40,10 +31,10 @@ All the files of the code
     * [ConsoleUtils.cpp](https://github.com/ThaMessia/BatchMaker/blob/main/src/ConsoleUtils.cpp)
     * [ConsoleUtils.h](https://github.com/ThaMessia/BatchMaker/blob/main/src/ConsoleUtils.h)
     * [G++Build.bat](https://github.com/ThaMessia/BatchMaker/blob/main/src/G%2B%2BBuild.bat)
+
 <br><br>
 
-## Malwares Info:
-
+### Malwares Info:
 This is the table where you can find all the malwares informations.
 
 <br>
@@ -59,8 +50,5 @@ silentmalware.bat | Print random numbers into the console.
 simplemalware.bat | Open infinite CMDs.
 tookmouse.bat | Infinitely moves the mouse in 2 places on the screen
 
-<br>
-
 # Code License & Use:
-
 The code is under the MIT License. Remember: The software is only for individual and testing use.
