@@ -44,7 +44,7 @@ enjavaerror.bat | Freeze the mouse on the screen
 specificblock.bat | Delete the System32.
 pcdown.bat | A malware that shutdown your pc.
 ripcomputer.bat | Open infinite Chromes.
-silentmalware.bat | Print random numbers into the console.
+silentmalware.bat | Dangerous fork.
 simplemalware.bat | Open infinite CMDs.
 tookmouse.bat | Infinitely moves the mouse in 2 places on the screen
 
