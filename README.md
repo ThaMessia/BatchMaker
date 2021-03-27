@@ -32,7 +32,7 @@ All the files of the code
     * [ConsoleUtils.h](https://github.com/ThaMessia/BatchMaker/blob/main/src/ConsoleUtils.h)
     * [G++Build.bat](https://github.com/ThaMessia/BatchMaker/blob/main/src/G%2B%2BBuild.bat)
 
-<br><br>
+<br>
 
 ### Malwares Info:
 This is the table where you can find all the malwares informations.
